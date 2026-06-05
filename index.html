@@ -1,3 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Inter:wght@400;500;600&display=swap');
+
+body {
+  margin: 0;
+  background: #080808;
+  color: #f3f3f3;
+  font-family: 'Inter', sans-serif;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)),
+    radial-gradient(circle at top right, #3a0000, transparent 40%);
+}
+
+.tag {
+  letter-spacing: 3px;
+  font-size: 12px;
+  color: #b8b8b8;
+}
+
+h1 {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 90px;
+  margin: 10px 0;
+  letter-spacing: -4px;
+}
+
+h2 {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.desc {
+  max-width: 620px;
+  font-size: 20px;
+  color: #cfcfcf;
+  line-height: 1.6;
+}
+
+p {
+  line-height: 1.7;
+  color: #d0d0d0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 22px;
+  border: 1px solid #f3f3f3;
+  color: #f3f3f3;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #f3f3f3;
+  color: #080808;
+}
+
+.about, .rules {
+  background: #0f0f0f;
+}
+
+.gallery {
+  background: #080808;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  border: 1px solid #333;
+  padding: 28px;
+  background: #111;
+}
+
+.card h3 {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 24px;
+}
+
+.contact {
+  text-align: center;
+  background: #141414;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 60px 7%;
+  }
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 22px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(8, 8, 8, 0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #222;
+  z-index: 100;
+}
+
+.logo {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.navlinks a {
+  color: #d0d0d0;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 13px;
+}
+
+.navlinks a:hover {
+  color: #fff;
+}
+</style>
+
+</head>
+
+<body>
+  
 <nav>
   <div class="logo">HONESST</div>
   <div class="navlinks">
@@ -82,3 +243,6 @@ Browse a curated selection of available identities.
   <p>For booking and inquiries, contact us through Telegram.</p>
   <a class="btn" href="https://t.me/HONESSTBOT" target="_blank">Contact @HONESSTBOT</a>
 </section>
+
+</body>
+</html>
